@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGenix - Professional Banner Design</title>
+    <link rel="icon" href="image/logo 3.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .banner-preview {
+            transition: all 0.3s ease;
+        }
+        .banner-preview:hover {
+            transform: scale(1.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="image/logo 3.jpg" alt="WebGenix Logo" class="w-10 h-10 rounded-full">
+                        <span class="text-2xl font-bold text-gray-800 ml-2">Web<span class="text-blue-600">G</span>enix</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="Wegenix.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition duration-300">Home</a>
+                    <a href="#services" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition duration-300">Services</a>
+                    <a href="#process" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition duration-300">Our Process</a>
+                    
+                    <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition duration-300">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl fade-in">
+                        <span class="block">Stunning Banner</span>
+                        <span class="block gradient-text">Designs That Convert</span>
+                    </h1>
+                    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 fade-in">
+                        Elevate your brand with custom-designed banners that capture attention and drive engagement. Our designs are crafted to make your message stand out.
+                    </p>
+                    <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 fade-in">
+                        <div class="flex space-x-4">
+                            <a href="Wegenix.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300">
+                                Get Your Banner
+                            </a>
+                            <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 transition duration-300">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                    <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md floating">
+                        <div class="relative w-full h-96 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg overflow-hidden flex items-center justify-center">
+                            <div class="absolute inset-0 bg-black opacity-20"></div>
+                            <div class="relative z-10 text-center p-6">
+                                <h3 class="text-white text-3xl font-bold mb-2">Summer Sale!</h3>
+                                <p class="text-white text-xl mb-4">Up to 50% Off</p>
+                                <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-bold hover:bg-gray-100 transition duration-300">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our <span class="gradient-text">Banner Design</span> Services
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    We specialize in creating visually appealing banners for all your needs
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service 1 -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover transition duration-300">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                                    <i class="fas fa-ad text-xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">Digital Ad Banners</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Perfect for social media campaigns, website headers, and online advertisements. Our digital banners are optimized for all platforms and devices.
+                                </p>
+                                <div class="mt-6">
+                                    <div class="bg-indigo-100 rounded-lg p-4">
+                                        <p class="text-sm text-indigo-700">
+                                            <span class="font-bold">Ideal for:</span> Facebook ads, Google Display Network, Instagram stories
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover transition duration-300">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                                    <i class="fas fa-store text-xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">Event & Trade Show Banners</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Make a lasting impression at your next event with our high-impact trade show banners designed to attract attention from across the room.
+                                </p>
+                                <div class="mt-6">
+                                    <div class="bg-indigo-100 rounded-lg p-4">
+                                        <p class="text-sm text-indigo-700">
+                                            <span class="font-bold">Ideal for:</span> Conferences, exhibitions, store openings
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover transition duration-300">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                                    <i class="fas fa-mobile-alt text-xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">Responsive Web Banners</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Beautiful banners that adapt seamlessly to any screen size. Our responsive designs ensure your message looks perfect on all devices.
+                                </p>
+                                <div class="mt-6">
+                                    <div class="bg-indigo-100 rounded-lg p-4">
+                                        <p class="text-sm text-indigo-700">
+                                            <span class="font-bold">Ideal for:</span> Website headers, landing pages, email campaigns
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our <span class="gradient-text">Design Process</span>
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Simple steps to your perfect banner design
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="md:flex items-center">
+                        <div class="flex-shrink-0 relative">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <span class="text-xl font-bold">1</span>
+                            </div>
+                            <div class="absolute h-full w-0.5 bg-gray-200 left-6 top-12 md:h-0 md:w-24 md:left-12 md:top-6"></div>
+                        </div>
+                        <div class="mt-6 md:mt-0 md:ml-8">
+                            <h3 class="text-xl font-bold text-gray-900">Discovery & Briefing</h3>
+                            <p class="mt-2 text-gray-600">
+                                We start by understanding your brand, target audience, and campaign objectives. You'll complete a simple creative brief to guide our design process.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="md:flex items-center">
+                        <div class="flex-shrink-0 relative">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <span class="text-xl font-bold">2</span>
+                            </div>
+                            <div class="absolute h-full w-0.5 bg-gray-200 left-6 top-12 md:h-0 md:w-24 md:left-12 md:top-6"></div>
+                        </div>
+                        <div class="mt-6 md:mt-0 md:ml-8">
+                            <h3 class="text-xl font-bold text-gray-900">Concept Development</h3>
+                            <p class="mt-2 text-gray-600">
+                                Our designers create 2-3 unique concepts based on your brief. We focus on visual hierarchy, color psychology, and clear messaging.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="md:flex items-center">
+                        <div class="flex-shrink-0 relative">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <span class="text-xl font-bold">3</span>
+                            </div>
+                            <div class="absolute h-full w-0.5 bg-gray-200 left-6 top-12 md:h-0 md:w-24 md:left-12 md:top-6"></div>
+                        </div>
+                        <div class="mt-6 md:mt-0 md:ml-8">
+                            <h3 class="text-xl font-bold text-gray-900">Feedback & Revisions</h3>
+                            <p class="mt-2 text-gray-600">
+                                You review the concepts and provide feedback. We offer unlimited revisions to ensure the design meets your expectations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="md:flex items-center">
+                        <div class="flex-shrink-0 relative">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <span class="text-xl font-bold">4</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 md:mt-0 md:ml-8">
+                            <h3 class="text-xl font-bold text-gray-900">Final Delivery</h3>
+                            <p class="mt-2 text-gray-600">
+                                Once approved, we deliver all final files in the formats you need (JPG, PNG, PDF, PSD) with print-ready or web-optimized versions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Design Tips -->
+    <section class="py-16 bg-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    <span class="gradient-text">Banner Design</span> Best Practices
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
+                    Key principles we follow to create effective banners
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Tip 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-eye text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Visual Hierarchy</h3>
+                    <p class="text-gray-600">
+                        We arrange elements to guide the viewer's eye naturally from most to least important information.
+                    </p>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Clear CTA</h3>
+                    <p class="text-gray-600">
+                        Every banner includes a prominent, action-oriented button that tells viewers exactly what to do next.
+                    </p>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-palette text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Brand Consistency</h3>
+                    <p class="text-gray-600">
+                        We maintain your brand colors, fonts, and style to reinforce brand recognition across all materials.
+                    </p>
+                </div>
+
+                <!-- Tip 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-mobile text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Mobile Optimization</h3>
+                    <p class="text-gray-600">
+                        All digital banners are designed to look great and function perfectly on mobile devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-extrabold sm:text-4xl">
+                        Ready to <span class="gradient-text">Elevate</span> Your Brand?
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-300">
+                        Get started with custom banner designs that capture attention and drive results. Fill out the form and we'll get back to you within 24 hours.
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div class="ml-4 text-base text-gray-300">
+                                <p>webgenix.agency@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
+                                <i class="fas fa-phone-alt text-white"></i>
+                            </div>
+                            <div class="ml-4 text-base text-gray-300">
+                                <p>+91 9361807747 | +91 9445831290</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <div class="ml-4 text-base text-gray-300">
+                                <p>Monday - Saturday: 9AM - 5PM</p>
+                                <p>Sunday: 10AM - 2PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:col-span-1">
+                    <div class="bg-gray-800 py-8 px-6 rounded-lg shadow-lg">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300">Your Name</label>
+                                <div class="mt-1">
+                                    <input type="text" id="name" name="name" required class="bg-gray-700 w-full px-4 py-2 border border-gray-600 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
+                                <div class="mt-1">
+                                    <input type="email" id="email" name="email" required class="bg-gray-700 w-full px-4 py-2 border border-gray-600 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="banner-type" class="block text-sm font-medium text-gray-300">Banner Type</label>
+                                <div class="mt-1">
+                                    <select id="banner-type" name="banner-type" class="bg-gray-700 w-full px-4 py-2 border border-gray-600 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500">
+                                        <option>Digital Ad Banner</option>
+                                        <option>Event/Trade Show Banner</option>
+                                        <option>Web Banner</option>
+                                        <option>Social Media Banner</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300">Project Details</label>
+                                <div class="mt-1">
+                                    <textarea id="message" name="message" rows="4" class="bg-gray-700 w-full px-4 py-2 border border-gray-600 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300">
+                                    Request a Quote
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-8">
+                <img src="image/logo 3.jpg" alt="WebGenix Logo" class="h-10 w-10 rounded-full">
+                <span class="text-2xl font-bold text-white ml-2">Web<span class="text-blue-600">G</span>enix</span>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Services</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Digital Banners</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Print Banners</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Social Media Banners</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Web Banners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Resources</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Design Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Templates</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="Wegenix.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#process" class="text-gray-400 hover:text-white transition duration-300">Our Process</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Connect</h3>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="https://www.facebook.com/profile.php?id=61576711165456" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://x.com/WWebgenix" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/webgenixagency/" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-gray-400 text-sm">
+                            Subscribe to our newsletter for design tips and special offers.
+                        </p>
+                        <div class="mt-2 flex">
+                            <input type="email" placeholder="Your email" class="bg-gray-700 px-4 py-2 rounded-l-md text-white focus:outline-none w-full">
+                            <button class="bg-indigo-600 px-4 py-2 rounded-r-md hover:bg-indigo-700 transition duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 WebGenix. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation trigger on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                    }
+                });
+            };
+            
+            // Initial check
+            fadeInOnScroll();
+            
+            // Check on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

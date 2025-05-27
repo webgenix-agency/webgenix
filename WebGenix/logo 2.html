@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGenix - Professional Logo Design Services</title>
+    <link rel="icon" href="image/logo 3.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .rotate-in {
+            animation: rotateIn 1s ease-out forwards;
+        }
+        @keyframes rotateIn {
+            from { transform: rotate(-15deg) scale(0.8); opacity: 0; }
+            to { transform: rotate(0) scale(1); opacity: 1; }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i><img src="image/logo 3.jpg" alt="Logo Example" class="w-10 h-10 rounded-full"> </i>
+                    <span class="playfair text-2xl font-bold text-gray-800"> Web<span class="text-blue-600">G</span><span class="playfair text-2xl font-bold text-gray-800">enix</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="Wegenix.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition duration-300">Home</a>
+                    <a href="#services" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition duration-300">Services</a>
+                    <a href="#process" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition duration-300">Our Process</a>
+                    <a href="#importance" class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition duration-300">Why It Matters</a>
+                    <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition duration-300">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-7 lg:text-left">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl fade-in" style="animation-delay: 0.1s;">
+                        <span class="block">Crafting Memorable</span>
+                        <span class="block gradient-text">Brand Identities</span>
+                    </h1>
+                    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 fade-in" style="animation-delay: 0.3s;">
+                        Your logo is the face of your business. We create distinctive, professional logos that communicate your brand's essence and make a lasting impression.
+                    </p>
+                    <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 fade-in" style="animation-delay: 0.5s;">
+                        <div class="flex space-x-4">
+                            <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300">
+                                Design My Logo
+                            </a>
+                            <a href="#process" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 transition duration-300">
+                                How It Works
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-5 lg:flex lg:items-center">
+                    <div class="relative mx-auto w-full rounded-lg shadow-lg floating rotate-in">
+                        <div class="relative w-full h-96 bg-white rounded-lg overflow-hidden flex items-center justify-center p-8">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-90"></div>
+                            <div class="relative z-10 w-full h-full flex flex-col items-center justify-center">
+                                <div class="w-40 h-40 bg-indigo-100 rounded-full flex items-center justify-center mb-6 pulse">
+                                    <i class="fas fa-lightbulb text-5xl text-indigo-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 text-center">Your Unique<br>Brand Identity</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importance Section -->
+    <section id="importance" class="py-16 bg-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl fade-in">
+                    Why Your <span class="gradient-text">Logo Matters</span>
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto fade-in" style="animation-delay: 0.2s;">
+                    A well-designed logo is more than just a pretty graphic
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Point 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.3s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">First Impressions</h3>
+                    <p class="text-gray-600">
+                        Your logo is often the first thing potential customers notice. A professional logo builds immediate trust and credibility for your brand.
+                    </p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.4s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Brand Recognition</h3>
+                    <p class="text-gray-600">
+                        A distinctive logo helps customers remember your business and distinguish you from competitors in a crowded marketplace.
+                    </p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.5s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-heart text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Emotional Connection</h3>
+                    <p class="text-gray-600">
+                        Colors, shapes, and typography in your logo can evoke specific emotions and associations that align with your brand values.
+                    </p>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.6s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-flag text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Professionalism</h3>
+                    <p class="text-gray-600">
+                        A polished logo signals that you're serious about your business and willing to invest in quality, which attracts better clients.
+                    </p>
+                </div>
+
+                <!-- Point 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.7s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-comments text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Brand Storytelling</h3>
+                    <p class="text-gray-600">
+                        A well-designed logo can communicate your company's personality, values, and industry at just a glance.
+                    </p>
+                </div>
+
+                <!-- Point 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.8s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fas fa-chart-line text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Marketing Foundation</h3>
+                    <p class="text-gray-600">
+                        Your logo serves as the cornerstone for all your marketing materials, ensuring visual consistency across all platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl fade-in">
+                    Our <span class="gradient-text">Logo Design</span> Services
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto fade-in" style="animation-delay: 0.2s;">
+                    Comprehensive solutions for all your branding needs
+                </p>
+            </div>
+
+            <div class="mt-12">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service 1 -->
+                    <div class="pt-6 fade-in" style="animation-delay: 0.3s;">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover transition duration-300">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                                    <i class="fas fa-star text-xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">Basic Logo Design</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Perfect for startups and small businesses needing a professional identity. Includes 3 initial concepts with 2 rounds of revisions.
+                                </p>
+                                <div class="mt-6">
+                                    <div class="bg-indigo-100 rounded-lg p-4">
+                                        <p class="text-sm text-indigo-700">
+                                            <span class="font-bold">Includes:</span> Final logo in multiple formats (PNG, JPG, PDF), color palette, typography guide
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="pt-6 fade-in" style="animation-delay: 0.4s;">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover transition duration-300">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                                    <i class="fas fa-crown text-xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">Brand Identity Package</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Complete branding solution including logo, color system, typography, and brand guidelines for consistent application.
+                                </p>
+                                <div class="mt-6">
+                                    <div class="bg-indigo-100 rounded-lg p-4">
+                                        <p class="text-sm text-indigo-700">
+                                            <span class="font-bold">Includes:</span> Full brand style guide, logo variations, social media kit, business card design
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="pt-6 fade-in" style="animation-delay: 0.5s;">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover transition duration-300">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                                    <i class="fas fa-sync-alt text-xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">Logo Redesign</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Modernize your existing logo while maintaining brand recognition. We analyze your current branding and suggest improvements.
+                                </p>
+                                <div class="mt-6">
+                                    <div class="bg-indigo-100 rounded-lg p-4">
+                                        <p class="text-sm text-indigo-700">
+                                            <span class="font-bold">Includes:</span> Brand audit, 3 redesign concepts, transition strategy for rebranding
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl fade-in">
+                    Our <span class="gradient-text">Design Process</span>
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto fade-in" style="animation-delay: 0.2s;">
+                    A structured approach to creating your perfect logo
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="md:flex items-center fade-in" style="animation-delay: 0.3s;">
+                        <div class="flex-shrink-0 relative">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <span class="text-xl font-bold">1</span>
+                            </div>
+                            <div class="absolute h-full w-0.5 bg-gray-200 left-6 top-12 md:h-0 md:w-24 md:left-12 md:top-6"></div>
+                        </div>
+                        <div class="mt-6 md:mt-0 md:ml-8">
+                            <h3 class="text-xl font-bold text-gray-900">Discovery & Research</h3>
+                            <p class="mt-2 text-gray-600">
+                                We start with an in-depth questionnaire about your business, target audience, and design preferences. Our team conducts market research to understand your industry landscape.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="md:flex items-center fade-in" style="animation-delay: 0.4s;">
+                        <div class="flex-shrink-0 relative">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <span class="text-xl font-bold">2</span>
+                            </div>
+                            <div class="absolute h-full w-0.5 bg-gray-200 left-6 top-12 md:h-0 md:w-24 md:left-12 md:top-6"></div>
+                        </div>
+                        <div class="mt-6 md:mt-0 md:ml-8">
+                            <h3 class="text-xl font-bold text-gray-900">Concept Development</h3>
+                            <p class="mt-2 text-gray-600">
+                                Our designers create 3-5 unique logo concepts based on your brief. We explore different styles (wordmarks, lettermarks, pictorial marks, etc.) to find the perfect approach.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="md:flex items-center fade-in" style="animation-delay: 0.5s;">
+                        <div class="flex-shrink-0 relative">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <span class="text-xl font-bold">3</span>
+                            </div>
+                            <div class="absolute h-full w-0.5 bg-gray-200 left-6 top-12 md:h-0 md:w-24 md:left-12 md:top-6"></div>
+                        </div>
+                        <div class="mt-6 md:mt-0 md:ml-8">
+                            <h3 class="text-xl font-bold text-gray-900">Refinement</h3>
+                            <p class="mt-2 text-gray-600">
+                                You provide feedback on the concepts, and we refine the selected direction. We adjust colors, typography, and composition until every detail is perfect.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="md:flex items-center fade-in" style="animation-delay: 0.6s;">
+                        <div class="flex-shrink-0 relative">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <span class="text-xl font-bold">4</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 md:mt-0 md:ml-8">
+                            <h3 class="text-xl font-bold text-gray-900">Final Delivery</h3>
+                            <p class="mt-2 text-gray-600">
+                                We prepare all final files in various formats (vector, web, print) and provide guidelines for logo usage. You receive full copyright ownership of the final design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Principles Section -->
+    <section class="py-16 bg-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold sm:text-4xl fade-in">
+                    Our <span class="text-indigo-200">Design Principles</span>
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-indigo-100 mx-auto fade-in" style="animation-delay: 0.2s;">
+                    The foundation of every great logo we create
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Principle 1 -->
+                <div class="bg-indigo-700 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.3s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-indigo-600 mb-4">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-white mb-2">Simplicity</h3>
+                    <p class="text-indigo-100">
+                        The most effective logos are clean and uncluttered. We eliminate unnecessary elements to create designs that are instantly recognizable.
+                    </p>
+                </div>
+
+                <!-- Principle 2 -->
+                <div class="bg-indigo-700 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.4s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-indigo-600 mb-4">
+                        <i class="fas fa-universal-access text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-white mb-2">Versatility</h3>
+                    <p class="text-indigo-100">
+                        Your logo should work across all mediums and sizes. We test designs in various contexts to ensure they remain effective everywhere.
+                    </p>
+                </div>
+
+                <!-- Principle 3 -->
+                <div class="bg-indigo-700 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.5s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-indigo-600 mb-4">
+                        <i class="fas fa-clock text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-white mb-2">Timelessness</h3>
+                    <p class="text-indigo-100">
+                        We avoid fleeting trends to create logos that will serve your business for years to come. A great logo should age gracefully.
+                    </p>
+                </div>
+
+                <!-- Principle 4 -->
+                <div class="bg-indigo-700 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 card-hover fade-in" style="animation-delay: 0.6s;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-indigo-600 mb-4">
+                        <i class="fas fa-feather-alt text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-white mb-2">Appropriateness</h3>
+                    <p class="text-indigo-100">
+                        The logo style should match your company's personality and industry. We ensure the design aligns with your brand's voice and values.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <div class="lg:col-span-1 fade-in">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Ready to <span class="gradient-text">Create</span> Your Logo?
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Tell us about your business and vision. We'll craft a logo that perfectly represents your brand identity.
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                            </div>
+                            <div class="ml-4 text-base text-gray-600">
+                                <p>webgenix.agency@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
+                                <i class="fas fa-phone-alt text-indigo-600"></i>
+                            </div>
+                            <div class="ml-4 text-base text-gray-600">
+                                <p>+91 9361807747 | +91 9445831290</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
+                                <i class="fas fa-clock text-indigo-600"></i>
+                            </div>
+                            <div class="ml-4 text-base text-gray-600">
+                                <p>Monday - Saturday: 9AM - 5PM</p>
+                                <p>Sunday: 10AM - 2PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:col-span-1 fade-in" style="animation-delay: 0.2s;">
+                    <div class="bg-gray-50 py-8 px-6 rounded-lg shadow-lg">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                                <div class="mt-1">
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <div class="mt-1">
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="business" class="block text-sm font-medium text-gray-700">Business Name</label>
+                                <div class="mt-1">
+                                    <input type="text" id="business" name="business" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="industry" class="block text-sm font-medium text-gray-700">Industry</label>
+                                <div class="mt-1">
+                                    <select id="industry" name="industry" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                                        <option>Retail</option>
+                                        <option>Technology</option>
+                                        <option>Healthcare</option>
+                                        <option>Food & Beverage</option>
+                                        <option>Professional Services</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Project Details</label>
+                                <div class="mt-1">
+                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" placeholder="Tell us about your brand, target audience, and any specific ideas you have..."></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300">
+                                    Start My Logo Design
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <!-- Company Logo and Name -->
+        <div class="flex items-center mb-8">
+            <img src="image/logo 3.jpg" alt="LogoGenius Logo" class="h-10 w-10 rounded-full">
+            <span class="playfair text-2xl font-bold text-white-800">Web<span class="text-blue-600">G</span><span class="playfair text-2xl font-bold text-white-800">enix</span></span>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Services</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Logo Design</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Brand Identity</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Logo Redesign</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Brand Guidelines</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Resources</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Design Tips</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Logo Inspiration</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Company</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="Wegenix.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="#process" class="text-gray-400 hover:text-white transition duration-300">Our Process</a></li>
+                    <li><a href="#importance" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Connect</h3>
+                <div class="mt-4 flex space-x-6">
+                    <a href="https://www.facebook.com/profile.php?id=61576711165456" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="https://x.com/WWebgenix" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/webgenixagency/" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a> 
+                </div>
+                <div class="mt-6">
+                    <p class="text-gray-400 text-sm">
+                        Subscribe for design tips and special offers.
+                    </p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-700 px-4 py-2 rounded-l-md text-white focus:outline-none w-full">
+                        <button class="bg-indigo-600 px-4 py-2 rounded-r-md hover:bg-indigo-700 transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2025 WebGenix. All rights reserved.
+            </p>
+            <div class="mt-4 md:mt-0 flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Animation trigger on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                    }
+                });
+            };
+            
+            // Initial check
+            fadeInOnScroll();
+            
+            // Check on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
